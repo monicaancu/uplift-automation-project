@@ -1,11 +1,11 @@
-package com.project_name.step_definitions;
+package com.uplift.step_definitions;
 
 
 
 
-import com.project_name.utilities.BrowserUtils;
-import com.project_name.utilities.ConfigurationReader;
-import com.project_name.utilities.Driver;
+import com.uplift.utilities.BrowserUtils;
+import com.uplift.utilities.ConfigurationReader;
+import com.uplift.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -30,9 +30,10 @@ public class Hooks {
     }
 
     //@Before (value = "@login", order = 2 )
-    public void login_scenario_before(){
-        System.out.println("---> @Before: RUNNING BEFORE EACH SCENARIO");
-    }
+//    public void login_scenario_before(){
+//
+//        System.out.println("---> @Before: RUNNING BEFORE EACH SCENARIO");
+//    }
 
     /*
     @After will be executed automatically after EVERY scenario in the project.
@@ -55,14 +56,14 @@ public class Hooks {
     }
 
     //@BeforeStep
-    public void setupStep(){
-        System.out.println("-----> @BeforeSTEP : Running before each step!");
-    }
-
-    //@AfterStep
-    public void teardownStep(){
-        System.out.println("-----> @AfterSTEP : Running after each step!");
-    }
+//    public void setupStep(){
+//        System.out.println("-----> @BeforeSTEP : Running before each step!");
+//    }
+//
+//    //@AfterStep
+//    public void teardownStep(){
+//        System.out.println("-----> @AfterSTEP : Running after each step!");
+//    }
 
 
 }
