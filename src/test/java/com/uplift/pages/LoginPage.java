@@ -22,12 +22,12 @@ public class LoginPage {
     public WebElement loginButton;
 
 
-//    public void login(String userNameStr, String passwordStr) {
-//        userName.sendKeys(userNameStr);
-//        password.sendKeys(passwordStr);
-//        loginButton.click();
+    public void login(String userNameStr, String passwordStr) {
+        this.userName.sendKeys(userNameStr);
+        this.password.sendKeys(passwordStr);
+        loginButton.click();
 //        verification that we logged
- //   }
+   }
     public void loginPOSManager(){
         this.userName.sendKeys("posmanager10@info.com");
         this.password.sendKeys("posmanager");

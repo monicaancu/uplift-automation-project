@@ -1,14 +1,22 @@
 #@login
-#Feature: Users should be able to login
+Feature: Users should be able to login
 
-#  Background: User is already in the log in page
-#    Given the user is on the login page
+  Background: User is already in the log in page
+    Given the user is on the login page
 
-#@dont_run
-#  Scenario: Verify login with different user types
-#    Given the user logged in as "<userType>"
-#    Given the user logged in with username as "eventscrmmanager101@info.com" and password as "eventscrmmanager"
+  @login
+  Scenario: Verify login with different user types
+    #Given the user logged in as "inventory manager"
+    #values for this string:
+      # pos manager
+      # crm manager
+      # sales manager,
+      # inventory manager
+      # expenses manager
 
+  #this Given step below is a duplicate step.
+  #Use the one above or this one but not both.
+    Given the user logged in with username as "salesmanager99@info.com" and password as "salesmanager"
 
 
 
