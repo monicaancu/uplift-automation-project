@@ -28,7 +28,7 @@ public class US09_StepDef {
 
         List<String> actual_list_Modules = BrowserUtils.getElementsText(By.xpath(ConfigurationReader.getProperty("modules_locator_xpath")));
 
-        Assert.assertEquals(given_list_Modules, actual_list_Modules);
+        Assert.assertEquals(given_list_Modules,  actual_list_Modules);
 
     }
 
