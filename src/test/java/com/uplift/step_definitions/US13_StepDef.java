@@ -12,7 +12,7 @@ public class US13_StepDef extends BasePage {
 
     @Then("ExpenceManager login name should be visible")
     public void expence_manager_login_name_should_be_visible() {
-        String actualLoginName = discussPage.loginName.getText().replaceAll("@.+$", "");;
+        String actualLoginName = discussPage.loginName.getText().replaceAll("@.+$", "");
         String expectedExpenceManager = ConfigurationReader.getProperty("expenses_manager_username").replaceAll("@.+$", "");
         Assert.assertEquals(expectedExpenceManager.toLowerCase(),actualLoginName.toLowerCase());
     }
