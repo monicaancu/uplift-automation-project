@@ -38,6 +38,9 @@ public abstract class BasePage {
     @FindBy(linkText = "My User")
     public WebElement myUser;
 
+    @FindBy(xpath = "//span[@class='oe_topbar_name']")
+    public WebElement accountHolderName;
+
     public BasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
