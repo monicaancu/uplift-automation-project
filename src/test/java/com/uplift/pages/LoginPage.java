@@ -35,7 +35,7 @@ public class LoginPage {
     }
 
     public void loginCRMManager(){
-        this.userName.sendKeys("eventscrmmanager101@info.com");
+        this.userName.sendKeys("eventscrmmanager10@info.com");
         this.password.sendKeys("eventscrmmanager");
         loginButton.click();
     }
@@ -47,7 +47,7 @@ public class LoginPage {
     }
 
     public void loginInventoryManager(){
-        this.userName.sendKeys("imm85@info.com");
+        this.userName.sendKeys("imm10@info.com");
         this.password.sendKeys("inventorymanager");
         loginButton.click();
     }

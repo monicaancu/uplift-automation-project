@@ -5,12 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CalendarPage {
+public class CRM_Page {
 
-    public CalendarPage(){
+    public CRM_Page() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath="(//li[@style='display: block;'])[2]")
-    public WebElement calendarPage;
+    @FindBy(xpath = "(//li[@style='display: block;'])[5]")
+    public WebElement crmPage;
+
 }
+

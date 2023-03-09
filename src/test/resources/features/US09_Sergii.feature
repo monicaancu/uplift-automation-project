@@ -1,12 +1,11 @@
 
-@login
 Feature: Users should be able to login
-
+  #@B28G28-108
   Background: User is already in the log in page
     Given the user is on the login page
     Then the user logged in as "sales manager"
 
-    @sm
+  @B28G28-106
     Scenario: Verify user a sales manager can be able to access the different modules.
       Given the user is on the main page
       Then user should see nineteen modules at the top of the page
@@ -29,6 +28,8 @@ Feature: Users should be able to login
         | Expenses        |
         | Maintenance     |
         | Dashboards      |
-
       And user should see the users nickname at the right top of the page
+
+      Then user clicks on each modules options and verifies url contains part of the URL
+
 

@@ -30,4 +30,7 @@ public class PointOfSalePage {
 
     @FindBy(xpath = "//tbody//div/input")
     public WebElement orderCheckboxes;
+
+    @FindBy(xpath="(//li[@style='display: block;'])[8]")
+    public WebElement pointOfSalePage;
 }
