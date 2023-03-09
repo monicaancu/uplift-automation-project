@@ -484,5 +484,65 @@ public class BrowserUtils {
         new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(time)).until(ExpectedConditions.presenceOfElementLocated(by));
     }
 
+    /**
+     * Create a user nickname equal to apps user nickname
+     */
+
+    public static String nickName(String username) {
+
+        String given_nickname = "";
+
+        for (int i = 0; i < username.length(); i++) {
+            if (!Character.isDigit(username.charAt(i)) && !Character.isLetter(username.charAt(i))) {
+                break;
+            }
+            given_nickname += username.charAt(i);
+        }
+
+        if (given_nickname.contains("sales")) {
+
+            String first_part_salesmanager = "SalesM";
+            String last_part_salesmanager = given_nickname.substring(given_nickname.indexOf("ana"));
+            given_nickname = first_part_salesmanager + last_part_salesmanager;
+
+        }
+
+        if (given_nickname.contains("eventsc")) {
+
+            String first_part_salesmanager = "EventsCRMM";
+            String last_part_salesmanager = given_nickname.substring(given_nickname.indexOf("ana"));
+            given_nickname = first_part_salesmanager + last_part_salesmanager;
+
+        }
+
+        if (given_nickname.contains("pos")) {
+
+            String first_part_salesmanager = "POSM";
+            String last_part_salesmanager = given_nickname.substring(given_nickname.indexOf("ana"));
+            given_nickname = first_part_salesmanager + last_part_salesmanager;
+
+        }
+
+        if (given_nickname.contains("imm")) {
+
+            String first_part_salesmanager = "InventoryM";
+            String last_part_salesmanager = given_nickname.substring(given_nickname.indexOf("ana"));
+            given_nickname = first_part_salesmanager + last_part_salesmanager;
+
+        }
+
+        if (given_nickname.contains("expenses")) {
+
+            String first_part_salesmanager = "ExpensesM";
+            String last_part_salesmanager = given_nickname.substring(given_nickname.indexOf("ana"));
+            given_nickname = first_part_salesmanager + last_part_salesmanager;
+
+        }
+
+        return given_nickname;
+
+    }
+
+
 
 }
