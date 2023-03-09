@@ -13,5 +13,8 @@ public class DiscussPage {
 
     @FindBy(xpath = "//span[@class='oe_topbar_name']")
     public WebElement loginName;
+
+    @FindBy(xpath="(//li[@style='display: block;'])[1]")
+    public WebElement discussPage;
 }
 

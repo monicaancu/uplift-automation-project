@@ -5,12 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PointOfSalePage {
+public class CRM_Page {
 
-    public PointOfSalePage(){
+    public CRM_Page() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath="(//li[@style='display: block;'])[8]")
-    public WebElement pointOfSalePage;
+    @FindBy(xpath = "(//li[@style='display: block;'])[5]")
+    public WebElement crmPage;
+
 }
+
