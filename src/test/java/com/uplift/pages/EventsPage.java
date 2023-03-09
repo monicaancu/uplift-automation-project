@@ -5,12 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Inventory {
+public class EventsPage {
 
-    public Inventory(){
+    public EventsPage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath="(//li[@style='display: block;'])[10]")
-    public WebElement inventoryPage;
+    @FindBy(xpath="(//li[@style='display: block;'])[14]")
+    public WebElement eventsPage;
 }

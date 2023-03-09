@@ -5,12 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Maintenance {
+public class EmailMarketingPage {
 
-    public Maintenance(){
+    public EmailMarketingPage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath="(//li[@style='display: block;'])[18]")
-    public WebElement maintenancePage;
+    @FindBy(xpath="(//li[@style='display: block;'])[13]")
+    public WebElement emailMarketingPage;
 }

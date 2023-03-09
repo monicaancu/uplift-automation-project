@@ -3,14 +3,10 @@ package com.uplift.step_definitions;
 import com.uplift.pages.*;
 import com.uplift.utilities.BrowserUtils;
 import com.uplift.utilities.ConfigurationReader;
-import com.uplift.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -63,25 +59,25 @@ public class US09_StepDef extends BasePage {
 
     PointOfSalePage pointOfSalePage = new PointOfSalePage();
 
-    Purchases purchasesPage = new Purchases();
+    PurchasesPage purchasesPage = new PurchasesPage();
 
-    Inventory inventoryPage = new Inventory();
+    InventoryPage inventoryPage = new InventoryPage();
 
-    Repairs repairsPage = new Repairs();
+    RepairsPage repairsPage = new RepairsPage();
 
-    Invoicing invoicingPage = new Invoicing();
+    InvoicingPage invoicingPage = new InvoicingPage();
 
-    EmailMarketing emailMarketingPage = new EmailMarketing();
+    EmailMarketingPage emailMarketingPage = new EmailMarketingPage();
 
-    Events eventsPage = new Events();
+    EventsPage eventsPage = new EventsPage();
 
-    Employees employeesPage = new Employees();
+    EmployeesPage employeesPage = new EmployeesPage();
 
-    Leaves leavesPage = new Leaves();
+    LeavesPage leavesPage = new LeavesPage();
 
-    Expenses expensesPage = new Expenses();
+    ExpensesPage expensesPage = new ExpensesPage();
 
-    Maintenance maintenancePage = new Maintenance();
+    MaintenancePage maintenancePage = new MaintenancePage();
 
     Dashboards dashboardsPage = new Dashboards();
 
