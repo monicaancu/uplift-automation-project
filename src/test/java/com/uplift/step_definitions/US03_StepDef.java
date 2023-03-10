@@ -39,7 +39,7 @@ public class US03_StepDef extends BasePage {
     public void i_am_able_to_see_all_modules_as_a_pos_manager() {
 
         System.out.println("getElementsText(By.xpath(\"//li[@style='display: block;']\")) = " + getElementsText(By.xpath("//li[@style='display: block;']")));
-        //System.out.println("getElementsText(By.xpath(\"//li[@style='display: block;']\")).size() = " + getElementsText(By.xpath("//li[@style='display: block;']")).size());
+        System.out.println("getElementsText(By.xpath(\"//li[@style='display: block;']\")).size() = " + getElementsText(By.xpath("//li[@style='display: block;']")).size());
 
 
 
@@ -66,7 +66,6 @@ public class US03_StepDef extends BasePage {
 
             System.out.println("All Modules are clickable and accessible. Module name is : " + textOfModule);
         }
-
 
         Assert.assertEquals("MODULES SIZE ARE NOT EQUAL", expectedListOfModules, actualListOfModules.size());
 
