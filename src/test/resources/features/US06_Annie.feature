@@ -2,7 +2,7 @@
 Feature: Default
 
 	#As a user, I want to access to access documentation page 
-  @B28G28-84 @Annie
+  @B28G28-84 @Annie @Regression
   Scenario: US06-AC01-TC01-As a user, I want to access the documentation page
     Given SalesManager enters login credentials
     Given I click my username and access the menu
@@ -11,7 +11,7 @@ Feature: Default
 
 
 
-  @B28G28-91 @Annie
+  @B28G28-91 @Annie @Regression
   Scenario: US06-AC02-TC01-As a user, I should see four main document topics are listed
     Given I am on documentation page
     Then I should see four main topics listed

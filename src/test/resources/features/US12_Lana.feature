@@ -2,7 +2,7 @@
 Feature: Default
 
 
-  @B28G28-83 @wip
+  @B28G28-83 @wip @Regression
   Scenario Outline: US12-AC01-TC01-As POS and eventCRM manager, I should be able to Login with valid credentials.
     Given I am on the login page
     When I login using "<email>" and "<password>"

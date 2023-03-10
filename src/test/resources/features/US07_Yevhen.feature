@@ -6,7 +6,7 @@ Feature: default
   #         AC : Verify the Event managers access to 15 modules.
 
 
-  @yevhen @B28G28-104 @wip
+  @yevhen @B28G28-104 @wip @Regression
   Scenario: US07-AC01-TC01 Verify the event manager access to 15 modules.
 
 

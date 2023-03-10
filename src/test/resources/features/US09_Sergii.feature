@@ -5,7 +5,7 @@ Feature: Users should be able to login
     Given the user is on the login page
     Then the user logged in as "sales manager"
 
-  @B28G28-106
+  @B28G28-106 @Regression
     Scenario: Verify user a sales manager can be able to access the different modules.
       Given the user is on the main page
       Then user should see nineteen modules at the top of the page
