@@ -18,13 +18,18 @@ import java.time.Duration;
 import java.util.List;
 
 import static com.uplift.utilities.BrowserUtils.getElementsText;
+import static com.uplift.utilities.BrowserUtils.waitForPresenceOfElement;
 
 public class US03_StepDef extends BasePage {
 
     LoginPage loginPage = new LoginPage();
 
     @Given("I am already on login page with giving URL.")
-    public void i_am_already_on_login_page_with_giving_url() {Driver.getDriver().get(ConfigurationReader.getProperty("url"));}
+    public void i_am_already_on_login_page_with_giving_url() {
+
+        Driver.getDriver().get("https://qa.uplifterp.com/web/login");
+    }
+
 
 
     @And("I already logged in as a POS manager.")
@@ -56,10 +61,15 @@ public class US03_StepDef extends BasePage {
 
         for (WebElement each : actualListOfModules) {
 
-            each.click();
-            String textOfModule = each.getText();
 
-            BrowserUtils.sleep(2);
+            each.click();
+
+            waitForPresenceOfElement(By.xpath("//li[@style='display: block;']"), 10);
+            String textOfModule = each.getText();
+            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(5000));
+            wait.until(ExpectedConditions.elementToBeClickable(each));
+
+            //BrowserUtils.sleep(2);
 
             System.out.println("All Modules are clickable and accessible. Module name is : " + textOfModule);
         }
