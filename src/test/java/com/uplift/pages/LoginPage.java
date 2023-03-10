@@ -47,7 +47,7 @@ public class LoginPage {
     }
 
     public void loginInventoryManager(){
-        this.userName.sendKeys("imm10@info.com");
+        this.userName.sendKeys("imm28@info.com");
         this.password.sendKeys("inventorymanager");
         loginButton.click();
     }
