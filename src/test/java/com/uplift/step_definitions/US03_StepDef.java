@@ -8,6 +8,7 @@ import com.uplift.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -38,31 +39,35 @@ public class US03_StepDef extends BasePage {
     public void i_am_able_to_see_all_modules_as_a_pos_manager() {
 
         System.out.println("getElementsText(By.xpath(\"//li[@style='display: block;']\")) = " + getElementsText(By.xpath("//li[@style='display: block;']")));
-        System.out.println("getElementsText(By.xpath(\"//li[@style='display: block;']\")).size() = " + getElementsText(By.xpath("//li[@style='display: block;']")).size());
+        //System.out.println("getElementsText(By.xpath(\"//li[@style='display: block;']\")).size() = " + getElementsText(By.xpath("//li[@style='display: block;']")).size());
+
+
+
     }
 
 
     @Then("I am able to access all  modules as a POS manager.")
     public void i_am_able_to_access_all_modules_as_a_pos_manager() throws InterruptedException {
 
-        List<WebElement> listOfModules = Driver.getDriver().findElements(By.xpath("//li[@style='display: block;']"));
+        List<WebElement> actualListOfModules = Driver.getDriver().findElements(By.xpath("//li[@style='display: block;']"));
 
-        for (WebElement each : listOfModules) {
+        int expectedListOfModules = 22;
+
+
+        for (WebElement each : actualListOfModules) {
 
             each.click();
-
-
-            //waitForPresenceOfElement(By.xpath("//li[@style='display: block;']"), 10);
-           // Thread.sleep(4000);
-
             String textOfModule = each.getText();
-            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(8000));
-            wait.until(ExpectedConditions.elementToBeClickable(each));
+
+            //WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(8000));
+            //wait.until(ExpectedConditions.elementToBeClickable(each));
+            //waitForPresenceOfElement(By.xpath("//li[@style='display: block;']"), 10);
+            Thread.sleep(4000);
+
             System.out.println("All Modules are clickable and accessible. Module name is : " + textOfModule);
-
         }
-        //Driver.getGetirici().manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
-        //Driver.closeDriver();
-    }
 
-}
+
+        Assert.assertEquals("MODULES SIZE ARE NOT EQUAL", expectedListOfModules, actualListOfModules.size());
+
+}}
