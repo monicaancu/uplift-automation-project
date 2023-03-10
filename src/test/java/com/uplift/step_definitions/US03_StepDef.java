@@ -44,7 +44,7 @@ public class US03_StepDef extends BasePage {
     public void i_am_able_to_see_all_modules_as_a_pos_manager() {
 
         System.out.println("getElementsText(By.xpath(\"//li[@style='display: block;']\")) = " + getElementsText(By.xpath("//li[@style='display: block;']")));
-        //System.out.println("getElementsText(By.xpath(\"//li[@style='display: block;']\")).size() = " + getElementsText(By.xpath("//li[@style='display: block;']")).size());
+        System.out.println("getElementsText(By.xpath(\"//li[@style='display: block;']\")).size() = " + getElementsText(By.xpath("//li[@style='display: block;']")).size());
 
 
 
@@ -61,15 +61,14 @@ public class US03_StepDef extends BasePage {
 
         for (WebElement each : actualListOfModules) {
 
+            BrowserUtils.sleep(2);
 
             each.click();
-
-            waitForPresenceOfElement(By.xpath("//li[@style='display: block;']"), 10);
             String textOfModule = each.getText();
-            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(5000));
-            wait.until(ExpectedConditions.elementToBeClickable(each));
 
-            //BrowserUtils.sleep(2);
+            //waitForPresenceOfElement(By.xpath("//li[@style='display: block;']"), 10);
+            //WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(5000));
+            //wait.until(ExpectedConditions.elementToBeClickable(each));
 
             System.out.println("All Modules are clickable and accessible. Module name is : " + textOfModule);
         }
