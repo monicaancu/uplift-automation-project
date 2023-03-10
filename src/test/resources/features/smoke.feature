@@ -1,3 +1,4 @@
+@smoke
 Feature: Smoke
 
     Scenario: POS Manager access 22 modules.
