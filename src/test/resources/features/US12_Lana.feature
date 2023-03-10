@@ -1,4 +1,4 @@
-@B28G28-88
+@B28G28-88 @regression
 Feature: Default
 
 

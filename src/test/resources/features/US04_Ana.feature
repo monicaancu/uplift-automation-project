@@ -1,4 +1,4 @@
-@B28G28-71
+@B28G28-71 @regression
 Feature: Default
 
   @B28G28-97 @Ana

@@ -1,4 +1,4 @@
-
+@regression
 Feature: Users should be able to login
   #@B28G28-108
   Background: User is already in the log in page

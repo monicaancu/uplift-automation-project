@@ -1,4 +1,4 @@
-@B28G28-80
+@B28G28-80 @regression
 Feature: Verifying that login name displayed on right corner of the screen
 
   @B28G28-93

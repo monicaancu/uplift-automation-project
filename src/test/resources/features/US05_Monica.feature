@@ -1,4 +1,4 @@
-@B28G28-90
+@B28G28-90 @regression
 Feature: Default
 
 	#Verify the POS managers can view the order list on the Point of Sale page, after checking the Order reference, all the orders should be checked.

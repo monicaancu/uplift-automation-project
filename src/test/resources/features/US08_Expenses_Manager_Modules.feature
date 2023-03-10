@@ -1,3 +1,4 @@
+@regression
 Feature: as Expenses Manager has access the different modules.
 
   @B28G28-82

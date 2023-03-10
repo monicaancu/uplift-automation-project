@@ -1,4 +1,4 @@
-@B28G28-86
+@B28G28-86 @regression
 Feature: Default
 
 	#As a user, I want to access to access documentation page 
