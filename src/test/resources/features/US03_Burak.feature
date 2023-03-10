@@ -1,4 +1,4 @@
-@B28G28-102
+@B28G28-102 @Regression
 Feature: Default
 
 	#h3. {color:#de350b}+_*User Story- US03 :*_+{color}
@@ -11,7 +11,7 @@ Feature: Default
   Scenario: US03-AC1-TC01 Verify the POS managers access to 22 modules.
 Feature: As a POS manager, I should be able to access to the main modules.
 
-  @Burak @Regression
+  @Burak
   Scenario: US03-AC01-TC01 Verify the POS managers access to 22 modules.
     Given  I am already on login page with giving URL.
     And I already logged in as a POS manager.

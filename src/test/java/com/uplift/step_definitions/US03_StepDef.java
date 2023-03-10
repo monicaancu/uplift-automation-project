@@ -59,10 +59,7 @@ public class US03_StepDef extends BasePage {
             each.click();
             String textOfModule = each.getText();
 
-            //WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(8000));
-            //wait.until(ExpectedConditions.elementToBeClickable(each));
-            //waitForPresenceOfElement(By.xpath("//li[@style='display: block;']"), 10);
-            Thread.sleep(4000);
+            BrowserUtils.sleep(2);
 
             System.out.println("All Modules are clickable and accessible. Module name is : " + textOfModule);
         }
