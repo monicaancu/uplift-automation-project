@@ -1,4 +1,5 @@
-@B28G28-102 @Regression
+#@B28G28-102
+@Regression
 Feature: Default
 
 	#h3. {color:#de350b}+_*User Story- US03 :*_+{color}
