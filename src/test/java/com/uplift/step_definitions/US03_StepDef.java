@@ -63,7 +63,7 @@ public class US03_StepDef extends BasePage {
 
             BrowserUtils.sleep(2);
 
-            each.click();
+            //each.click();
             String textOfModule = each.getText();
 
             //waitForPresenceOfElement(By.xpath("//li[@style='display: block;']"), 10);
