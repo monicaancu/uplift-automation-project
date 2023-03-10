@@ -59,15 +59,14 @@ public class US03_StepDef extends BasePage {
             each.click();
             String textOfModule = each.getText();
 
-            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(8000));
-            wait.until(ExpectedConditions.elementToBeClickable(each));
+            //WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(8000));
+            //wait.until(ExpectedConditions.elementToBeClickable(each));
             //waitForPresenceOfElement(By.xpath("//li[@style='display: block;']"), 10);
-            // Thread.sleep(4000);
+            Thread.sleep(4000);
 
             System.out.println("All Modules are clickable and accessible. Module name is : " + textOfModule);
         }
 
-        //String partOfModules = "Leaves";
 
         Assert.assertEquals("MODULES SIZE ARE NOT EQUAL", expectedListOfModules, actualListOfModules.size());
 
